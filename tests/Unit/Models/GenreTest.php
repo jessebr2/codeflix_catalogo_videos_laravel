@@ -41,10 +41,10 @@ class GenreTest extends TestCase
 
     public function testIncrementing()
     {
-        $this->assertFalse($this->genre->$incrementing);
+        $this->assertFalse($this->genre->incrementing);
     }
 
-    public function trestDatesAttribute();
+    public function testDatesAttribute()
     {
         $dates = ['deleted_at', 'created_at', 'updated_at'];
         foreach ($dates as $date) {

@@ -89,5 +89,8 @@ class GenreTest extends TestCase
 
         $genres = Genre::all();
         $this->assertCount(0, $genres);
-        }
+
+        $genre->restore();
+        $this->assertNotNull(Genre::find($genre->id));
+    }
 }
